@@ -55,3 +55,4 @@ data_retriever <- function(job) {
 }
 
 final <- pblapply(job_links, data_retriever)
+saveRDS(final, file = "all_US_payscale.rds")
